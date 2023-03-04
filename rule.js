@@ -28,7 +28,8 @@ module.exports = {
   "tags": [ "sentences" ],
   "function": (params, onError) => {
 
-    const ignoredWords = params.config.ignored_words || [];
+    const ignoredWords = params.config.ignored_words ||
+      [ "ie", "i.e", "eg", "e.g", "etc", "ex" ];
     const lineEndings = params.config.line_endings || [ ".", "?", "!" ];
     const sentenceStartRegex = params.config.sentence_start ||
       "^\\s+(\\w|[*_'\"])";

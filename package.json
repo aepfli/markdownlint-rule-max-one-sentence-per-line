@@ -1,6 +1,6 @@
 {
   "name": "markdownlint-rule-max-one-sentence-per-line",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A custom markdownlint rule to enforce maximum one sentence per line",
   "main": "./rule.js",
   "keywords": [
