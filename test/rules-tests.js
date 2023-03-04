@@ -1,3 +1,7 @@
+/*
+This file is based on https://github.com/DavidAnson/markdownlint/blob/main/test/markdownlint-test-scenarios.js
+A lot of the logic in here is still based on the initial work of DavidAnson - it is purely adapted to the project needs.
+*/
 // @ts-check
 
 "use strict";
