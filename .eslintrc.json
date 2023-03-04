@@ -1,0 +1,227 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:all",
+    "plugin:jsdoc/recommended",
+    "plugin:n/recommended",
+    "plugin:regexp/recommended",
+    "plugin:unicorn/all"
+  ],
+  "ignorePatterns": [
+    "demo/markdown-it.min.js",
+    "demo/markdownlint-browser.js",
+    "demo/markdownlint-browser.min.js",
+    "example/typescript/type-check.js",
+    "test-repos/"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "demo/*.js"
+      ],
+      "env": {
+        "browser": true
+      },
+      "rules": {
+        "jsdoc/require-jsdoc": "off",
+        "unicorn/prefer-query-selector": "off",
+        "unicorn/prefer-add-event-listener": "off",
+        "no-console": "off",
+        "no-shadow": "off",
+        "no-var": "off"
+      }
+    },
+    {
+      "files": [
+        "example/*.js"
+      ],
+      "rules": {
+        "n/no-extraneous-require": "off",
+        "n/no-missing-require": "off",
+        "no-console": "off",
+        "no-invalid-this": "off",
+        "no-shadow": "off",
+        "object-property-newline": "off"
+      }
+    },
+    {
+      "files": [
+        "**/*.mjs"
+      ],
+      "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module"
+      }
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "script"
+  },
+  "plugins": [
+    "es",
+    "jsdoc",
+    "n",
+    "unicorn"
+  ],
+  "reportUnusedDisableDirectives": true,
+  "rules": {
+    "array-bracket-spacing": ["error", "always"],
+    "array-element-newline": "off",
+    "capitalized-comments": "off",
+    "complexity": "off",
+    "dot-location": ["error", "property"],
+    "func-style": "off",
+    "function-call-argument-newline": "off",
+    "function-paren-newline": "off",
+    "global-require": "off",
+    "id-length": "off",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": "off",
+    "logical-assignment-operators": "off",
+    "max-depth": "off",
+    "max-lines": "off",
+    "max-lines-per-function": "off",
+    "max-params": ["off"],
+    "max-statements": "off",
+    "multiline-comment-style": ["error", "separate-lines"],
+    "multiline-ternary": "off",
+    "newline-per-chained-call": "off",
+    "no-continue": "off",
+    "no-empty-function": "off",
+    "no-extra-parens": "off",
+    "no-implicit-coercion": "off",
+    "no-magic-numbers": "off",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-sync": "off",
+    "no-ternary": "off",
+    "no-undefined": "off",
+    "object-curly-spacing": ["error", "always"],
+    "object-shorthand": "off",
+    "one-var": "off",
+    "operator-linebreak": ["error", "after"],
+    "padded-blocks": "off",
+    "prefer-arrow-callback": "off",
+    "prefer-destructuring": "off",
+    "prefer-named-capture-group": "off",
+    "prefer-template": "off",
+    "require-unicode-regexp": "off",
+    "sort-imports": "off",
+    "sort-keys": "off",
+    "space-before-function-paren": ["error", "never"],
+    "vars-on-top": "off",
+    "wrap-regex": "off",
+
+    "es/no-regexp-lookbehind-assertions": "error",
+
+    "jsdoc/check-access": "error",
+    "jsdoc/check-alignment": "error",
+    "jsdoc/check-examples": "off",
+    "jsdoc/check-indentation": "error",
+    "jsdoc/check-line-alignment": "error",
+    "jsdoc/check-param-names": "error",
+    "jsdoc/check-property-names": "error",
+    "jsdoc/check-syntax": "error",
+    "jsdoc/check-tag-names": "error",
+    "jsdoc/check-types": "error",
+    "jsdoc/check-values": "error",
+    "jsdoc/empty-tags": "error",
+    "jsdoc/implements-on-classes": "error",
+    "jsdoc/match-description": "error",
+    "jsdoc/multiline-blocks": "error",
+    "jsdoc/newline-after-description": "error",
+    "jsdoc/no-bad-blocks": "error",
+    "jsdoc/no-defaults": "error",
+    "jsdoc/no-multi-asterisks": "error",
+    "jsdoc/no-undefined-types": "error",
+    "jsdoc/require-asterisk-prefix": "error",
+    "jsdoc/require-description": "error",
+    "jsdoc/require-description-complete-sentence": "error",
+    "jsdoc/require-jsdoc": "error",
+    "jsdoc/require-param": "error",
+    "jsdoc/require-param-description": "error",
+    "jsdoc/require-param-name": "error",
+    "jsdoc/require-param-type": "error",
+    "jsdoc/require-property": "error",
+    "jsdoc/require-property-description": "error",
+    "jsdoc/require-property-name": "error",
+    "jsdoc/require-property-type": "error",
+    "jsdoc/require-returns": "error",
+    "jsdoc/require-returns-check": "error",
+    "jsdoc/require-returns-description": "error",
+    "jsdoc/require-returns-type": "error",
+    "jsdoc/require-throws": "error",
+    "jsdoc/require-yields": "error",
+    "jsdoc/require-yields-check": "error",
+    "jsdoc/tag-lines": "error",
+    "jsdoc/valid-types": "error",
+
+    "n/handle-callback-err": "error",
+    "n/no-callback-literal": "error",
+    "n/no-exports-assign": "error",
+    "n/no-extraneous-import": "error",
+    "n/no-extraneous-require": "error",
+    "n/no-missing-import": "error",
+    "n/no-missing-require": "error",
+    "n/no-new-require": "error",
+    "n/no-path-concat": "error",
+    "n/no-process-exit": "error",
+    "n/no-unpublished-bin": "error",
+    "n/no-unpublished-import": "error",
+    "n/no-unpublished-require": "error",
+    "n/no-unsupported-features/es-builtins": "error",
+    "n/no-unsupported-features/es-syntax": "error",
+    "n/no-unsupported-features/node-builtins": "error",
+    "n/process-exit-as-throw": "error",
+    "n/shebang": "error",
+    "n/no-deprecated-api": "error",
+    "n/callback-return": "error",
+    "n/exports-style": "error",
+    "n/file-extension-in-import": "error",
+    "n/global-require": "off",
+    "n/no-mixed-requires": "error",
+    "n/no-process-env": "error",
+    "n/no-restricted-import": "error",
+    "n/no-restricted-require": "error",
+    "n/no-sync": "off",
+    "n/prefer-global/buffer": "error",
+    "n/prefer-global/console": "error",
+    "n/prefer-global/process": "error",
+    "n/prefer-global/text-decoder": "error",
+    "n/prefer-global/text-encoder": "error",
+    "n/prefer-global/url-search-params": "error",
+    "n/prefer-global/url": "error",
+    "n/prefer-promises/dns": "error",
+    "n/prefer-promises/fs": "error",
+
+    "regexp/no-super-linear-backtracking": "off",
+
+    "unicorn/better-regex": "off",
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/no-array-callback-reference": "off",
+    "unicorn/no-keyword-prefix": "off",
+    "unicorn/no-new-array": "off",
+    "unicorn/no-null": "off",
+    "unicorn/no-unsafe-regex": "off",
+    "unicorn/prefer-at": "off",
+    "unicorn/prefer-module": "off",
+    "unicorn/prefer-string-replace-all": "off",
+    "unicorn/prefer-string-slice": "off",
+    "unicorn/prefer-switch": "off",
+    "unicorn/prevent-abbreviations": "off",
+    "unicorn/switch-case-braces": ["error", "avoid"]
+  },
+  "settings": {
+    "jsdoc": {
+      "preferredTypes": {
+        "object": "Object"
+      }
+    }
+  }
+}

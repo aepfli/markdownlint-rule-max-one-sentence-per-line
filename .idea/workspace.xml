@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="86848773-1c74-4542-81da-b6a40f01352f" name="Changes" comment="unification of comment transformation&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.markdownlint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.markdownlintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/helper-tests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/default.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/markdownlint-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/markdownlint-exports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/markdownlint-rule-helpers-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/markdownlint-rule-helpers-browser.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/.markdownlint.jsonc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/build-rules.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/footing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/heading.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md001.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md002.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md003.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md004.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md005.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md006.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md007.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md009.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md010.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md011.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md012.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md013.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md014.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md018.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md019.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md020.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md021.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md022.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md023.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md024.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md025.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md026.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md027.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md028.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md029.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md030.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md031.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md032.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md033.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md034.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md035.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md036.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md037.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md038.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md039.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md040.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md041.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md042.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md043.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md044.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md045.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md046.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md047.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md048.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md049.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md050.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md051.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md052.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md053.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-build/md054.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/CustomRules.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Prettier.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/ReleaseProcess.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Rules.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md001.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md002.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md003.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md004.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md005.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md006.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md007.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md009.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md010.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md011.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md012.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md013.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md014.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md018.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md019.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md020.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md021.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md022.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md023.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md024.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md025.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md026.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md027.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md028.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md029.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md030.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md031.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md032.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md033.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md034.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md035.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md036.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md037.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md038.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md039.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md040.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md041.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md042.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md043.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md044.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md045.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md046.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md047.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md048.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md049.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md050.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md051.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md052.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md053.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/md054.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/bad.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/good.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/standalone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/typescript/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/typescript/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/typescript/type-check.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/helpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/markdownlint.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/markdownlint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md001.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md002.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md003.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md004.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md005.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md006.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md007.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md009.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md010.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md011.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md012.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md013.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md014.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md018.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md019.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md020.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md021.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md022.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md023.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md024.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md025.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md026.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md027.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md028.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md029.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md030.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md031.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md032.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md033.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md034.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md035.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md036.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md037.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md038.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md039.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md040.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md041.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md042.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md043.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md044.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md045.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md046.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md047.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md048.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md049-md050.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md051.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md052.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/md053.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/.markdownlint.jsonc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/.markdownlint.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/build-config-example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/build-config-schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/markdownlint-config-schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/cirosantilli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/prettier.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/relaxed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-badchildfile.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-badchildjson.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-badchildpackage.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-badcontent.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-badjson.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-child.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-child.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-grandparent-hybrid.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-grandparent.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-grandparent.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-packageparent.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-parent-hybrid.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-parent.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config/config-parent.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/node_modules/pseudo-package/config-frompackage.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/node_modules/pseudo-package/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rules/any-blockquote.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rules/every-n-lines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rules/first-line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rules/letters-E-X.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rules/lint-javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rules/npm/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rules/npm/sample-rule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rules/rules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rules/validate-json.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="fixing_yaml_generation" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="GoVcsConfiguration">
+    <option name="GO_FMT" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LgXHoXFJD3MshRodejYKvISFN4" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last.edited.regexp": "Sample Textadf",
+    "last_opened_file_path": "/home/simonschrottner/projects/github/markdownlint-rule-max-one-sentence-per-line",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/home/simonschrottner/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8617.56/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/doc-build" />
+      <recent name="$PROJECT_DIR$/doc" />
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.ava helper-test.js TESTING HELPER">
+    <configuration name="ava helper-test.js TESTING HELPER" type="NodeJSConfigurationType" application-parameters="-v test/helper-test.js" path-to-js-file="node_modules/ava/entrypoints/cli.mjs" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="ava markdownlint-test-scenarios.js all" type="NodeJSConfigurationType" application-parameters="-m &quot;all&quot; -v test/markdownlint-test-scenarios.js" path-to-js-file="node_modules/ava/entrypoints/cli.mjs" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="ava markdownlint-test-scenarios.js sentences-per-line" type="NodeJSConfigurationType" application-parameters="--update-snapshots -m &quot;sentences-per-line&quot; -v test/markdownlint-test-scenarios.js" path-to-js-file="node_modules/ava/entrypoints/cli.mjs" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="ava markdownlint-test-scenarios.js sentences-per-line.md" type="NodeJSConfigurationType" application-parameters="-m &quot;sentences-per-line.md&quot; -v test/markdownlint-test-scenarios.js" path-to-js-file="node_modules/ava/entrypoints/cli.mjs" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="ava markdownlint-test.js projectFiles" type="NodeJSConfigurationType" application-parameters="-m &quot;projectFiles&quot; -v test/markdownlint-test.js" path-to-js-file="node_modules/ava/entrypoints/cli.mjs" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="ava rules-tests.js sentences-per-line" type="NodeJSConfigurationType" application-parameters="-v test/rules-tests.js" path-to-js-file="node_modules/ava/entrypoints/cli.mjs" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="build-config" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-config" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build-docs" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-docs" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="ci" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="ci" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serial-config-docs" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serial-config-docs" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="update-snapshots" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="update-snapshots" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.ava helper-test.js TESTING HELPER" />
+      <item itemvalue="Node.js.ava rules-tests.js sentences-per-line" />
+      <item itemvalue="Node.js.ava markdownlint-test-scenarios.js all" />
+      <item itemvalue="Node.js.ava markdownlint-test-scenarios.js sentences-per-line" />
+      <item itemvalue="Node.js.ava markdownlint-test-scenarios.js sentences-per-line.md" />
+      <item itemvalue="Node.js.ava markdownlint-test.js projectFiles" />
+      <item itemvalue="npm.test" />
+      <item itemvalue="npm.update-snapshots" />
+      <item itemvalue="npm.build-config" />
+      <item itemvalue="npm.build-docs" />
+      <item itemvalue="npm.ci" />
+      <item itemvalue="npm.serial-config-docs" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serial-config-docs" />
+        <item itemvalue="npm.ci" />
+        <item itemvalue="npm.build-docs" />
+        <item itemvalue="npm.build-config" />
+        <item itemvalue="npm.update-snapshots" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86848773-1c74-4542-81da-b6a40f01352f" name="Changes" comment="" />
+      <created>1676293613345</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676293613345</updated>
+      <workItem from="1676293614457" duration="24408000" />
+      <workItem from="1676448587584" duration="18000" />
+      <workItem from="1676448673448" duration="21558000" />
+      <workItem from="1677003552354" duration="612000" />
+      <workItem from="1677569017981" duration="1106000" />
+      <workItem from="1677865866857" duration="17945000" />
+    </task>
+    <task id="LOCAL-00001" summary="improving detection and adding testcases">
+      <created>1676449847539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676449847539</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Improved YAML Schema build (#721)&#10;&#10;Fixed issue with generating YAML schema by using&#10;`YAML.stringify` instead of string replacements&#10;of the `JSON.stringigy` result.&#10;&#10;closes: #721">
+      <created>1676451728714</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676451728714</updated>
+    </task>
+    <task id="LOCAL-00003" summary="sentence-per-line">
+      <created>1676451791686</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676451791686</updated>
+    </task>
+    <task id="LOCAL-00004" summary="sentence-per-line">
+      <created>1676451883838</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676451883838</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Improved YAML Schema build (#721)&#10;&#10;Fixed issue with generating YAML schema by using&#10;`YAML.stringify` instead of string replacements&#10;of the `JSON.stringigy` result.&#10;&#10;closes: #721&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;">
+      <created>1676451944718</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676451944718</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Improved YAML Schema build (#721)&#10;&#10;Fixed issue with generating YAML schema by using&#10;`YAML.stringify` instead of string replacements&#10;of the `JSON.stringigy` result.&#10;&#10;closes: #721&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;">
+      <created>1676452001594</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676452001594</updated>
+    </task>
+    <task id="LOCAL-00007" summary="improving detection and adding testcases">
+      <created>1676452110958</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676452110958</updated>
+    </task>
+    <task id="LOCAL-00008" summary="improving detection and adding testcases">
+      <created>1676453074265</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676453074265</updated>
+    </task>
+    <task id="LOCAL-00009" summary="improving detection and adding testcases&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;">
+      <created>1676454290797</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676454290797</updated>
+    </task>
+    <task id="LOCAL-00010" summary="improving detection and adding testcases&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;">
+      <created>1676454860132</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676454860132</updated>
+    </task>
+    <task id="LOCAL-00011" summary="improving detection and adding testcases&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;">
+      <created>1676459782923</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676459782923</updated>
+    </task>
+    <task id="LOCAL-00012" summary="improving detection and adding testcases&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;">
+      <created>1676459796006</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676459796006</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Improved YAML Schema build (#721)&#10;&#10;Fixed issue with generating YAML schema by using&#10;`YAML.stringify` instead of string replacements&#10;of the `JSON.stringigy` result.&#10;&#10;closes: #721&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;">
+      <created>1676482934422</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676482934422</updated>
+    </task>
+    <task id="LOCAL-00014" summary="PR Changes&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;">
+      <created>1676483009525</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676483009525</updated>
+    </task>
+    <task id="LOCAL-00015" summary="unification of comment transformation&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;">
+      <created>1676878658703</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676878658703</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="sentence-per-line" />
+    <MESSAGE value="Improved YAML Schema build (#721)&#10;&#10;Fixed issue with generating YAML schema by using&#10;`YAML.stringify` instead of string replacements&#10;of the `JSON.stringigy` result.&#10;&#10;closes: #721" />
+    <MESSAGE value="improving detection and adding testcases" />
+    <MESSAGE value="improving detection and adding testcases&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;" />
+    <MESSAGE value="Improved YAML Schema build (#721)&#10;&#10;Fixed issue with generating YAML schema by using&#10;`YAML.stringify` instead of string replacements&#10;of the `JSON.stringigy` result.&#10;&#10;closes: #721&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;" />
+    <MESSAGE value="PR Changes&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;" />
+    <MESSAGE value="unification of comment transformation&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="unification of comment transformation&#10;&#10;Signed-off-by: Simon Schrottner &lt;simon.schrottner@dynatrace.com&gt;" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/rules-tests.js</url>
+          <line>78</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/rule.js</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

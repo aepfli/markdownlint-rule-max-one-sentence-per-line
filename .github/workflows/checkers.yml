@@ -1,0 +1,18 @@
+name: Checkers
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: JustinBeckwith/linkinator-action@v1.10.4
+      with:
+        linksToSkip: '^https://github.com/.*/search\?q= ^https://opensource.org/'
+        paths: '*.md'
+        timeout: 60000
+

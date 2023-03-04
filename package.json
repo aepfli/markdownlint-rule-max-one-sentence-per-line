@@ -1,0 +1,48 @@
+{
+  "name": "markdownlint-rule-max-one-sentence-per-line",
+  "version": "0.0.1",
+  "description": "A custom markdownlint rule to enforce maximum one sentence per line",
+  "main": "./rule.js",
+  "keywords": [
+    "markdownlint-rule",
+    "markdownlint",
+    "markdown",
+    "lint"
+  ],
+  "author": "Simon Schrottner",
+  "license": "MIT",
+  "homepage": "https://github.com/aepfli/markdownlint-rule-max-one-sentence-per-line",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aepfli/markdownlint-rule-max-one-sentence-per-line.git"
+  },
+  "bugs": "https://github.com/aepfli/markdownlint-rule-max-one-sentence-per-line",
+  "scripts": {
+    "test": "ava test/*-tests.js",
+    "lint": "npm run lint:es && npm run lint:md",
+    "lint-fix": "npm run lint:es-fix && npm run lint:md-fix",
+    "lint:es": "eslint --max-warnings 0 .",
+    "lint:es-fix": "eslint --max-warnings 0 --fix .",
+    "lint:md": "markdownlint '**/*.md' ",
+    "lint:md-fix": "markdownlint --fix '**/*.md'",
+    "pretty-check": "prettier --check .",
+    "pretty": "prettier --write ."
+  },
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "dependencies": {
+    "markdownlint-rule-helpers": "~0.18.0"
+  },
+  "devDependencies": {
+    "ava": "5.2.0",
+    "eslint": "8.34.0",
+    "eslint-plugin-es": "4.1.0",
+    "eslint-plugin-jsdoc": "40.0.0",
+    "eslint-plugin-n": "15.6.1",
+    "eslint-plugin-regexp": "1.12.0",
+    "eslint-plugin-unicorn": "45.0.2",
+    "markdownlint": "^0.27.0",
+    "markdownlint-cli": "^0.33.0"
+  }
+}

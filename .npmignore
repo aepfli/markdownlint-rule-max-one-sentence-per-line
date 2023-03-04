@@ -1,0 +1,8 @@
+.eslintignore
+.eslintrc.json
+.github
+.npmrc
+.vscode
+npm-debug.log
+test
+test-repos
