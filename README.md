@@ -57,7 +57,6 @@ Fixable: Some violations can be fixed by tooling
 +   Second sentence. <!-- indentation based on provided configuration -->
 ```
 
-
 ## Usage
 
 For usage with certain tools, please refer to the documentation of [markdownlint](https://github.com/davidAnson/markdownlint), markdownlint-cli or the tool you are using.
