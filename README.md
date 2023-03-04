@@ -43,26 +43,20 @@ Parameters:
 
 Fixable: Some violations can be fixed by tooling
 
-```markdown
-First sentence. Second sentence.
+```diff
+- First sentence. Second sentence.
++ First sentence.
++ Second sentence.
 
-> First sentence. Second sentence.
+- > First sentence. Second sentence.
++ > First sentence.
++ > Second sentence.
 
-* First sentence. Second sentence.
+- * First sentence. Second sentence.
++ * First sentence.
++   Second sentence. <!-- indentation based on provided configuration -->
 ```
 
-should be:
-
-```markdown
-First sentence.
-Second sentence.
-
-> First sentence.
-> Second sentence.
-
-* First sentence.
-  Second sentence. <!-- indentation based on provided configuration -->
-```
 
 ## Usage
 
