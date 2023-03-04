@@ -38,11 +38,17 @@ Parameters:
 - `line_endings`: Recognized line-endings (`string[]`, default `[".","?","!"]`)
 - `sentence_start`: Regex for sentence start (`string`, default
   `^\s+(\w|[*_'"])`)
+- `indentation`: Defines the used indentation (`string`, default
+  `  `)
 
 Fixable: Some violations can be fixed by tooling
 
 ```markdown
 First sentence. Second sentence.
+
+> First sentence. Second sentence.
+
+* First sentence. Second sentence.
 ```
 
 should be:
@@ -50,6 +56,12 @@ should be:
 ```markdown
 First sentence.
 Second sentence.
+
+> First sentence.
+> Second sentence.
+
+* First sentence.
+  Second sentence. <!-- indentation based on provided configuration -->
 ```
 
 ## Usage
