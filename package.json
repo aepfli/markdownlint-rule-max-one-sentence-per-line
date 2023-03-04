@@ -24,9 +24,7 @@
     "lint:es": "eslint --max-warnings 0 .",
     "lint:es-fix": "eslint --max-warnings 0 --fix .",
     "lint:md": "markdownlint '**/*.md' ",
-    "lint:md-fix": "markdownlint --fix '**/*.md'",
-    "pretty-check": "prettier --check .",
-    "pretty": "prettier --write ."
+    "lint:md-fix": "markdownlint --fix '**/*.md'"
   },
   "engines": {
     "node": ">=14.18.0"

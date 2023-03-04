@@ -31,15 +31,15 @@ Tags: `sentences`
 
 Parameters:
 
-- `context_length`: Size of context provided in error message (`integer`,
+* `context_length`: Size of context provided in error message (`integer`,
   default `14`)
-- `ignored_words`: Words which will be ignored during the detection
+* `ignored_words`: Words which will be ignored during the detection
   (`string[]`, default `["ie","i.e","eg","e.g","etc","ex"]`)
-- `line_endings`: Recognized line-endings (`string[]`, default `[".","?","!"]`)
-- `sentence_start`: Regex for sentence start (`string`, default
+* `line_endings`: Recognized line-endings (`string[]`, default `[".","?","!"]`)
+* `sentence_start`: Regex for sentence start (`string`, default
   `^\s+(\w|[*_'"])`)
-- `indentation`: Defines the used indentation (`string`, default
-  `  `)
+* `indentation`: Defines the used indentation (`string`, default
+  ``)
 
 Fixable: Some violations can be fixed by tooling
 
