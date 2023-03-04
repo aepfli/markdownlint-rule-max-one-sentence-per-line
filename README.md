@@ -66,4 +66,10 @@ Second sentence.
 
 ## Usage
 
-For usage with certain tools, please refer to the documentation of markdownlint, markdownlint-cli or the tool you are using.
+For usage with certain tools, please refer to the documentation of [markdownlint](https://github.com/davidAnson/markdownlint), markdownlint-cli or the tool you are using.
+
+## Attribution
+
+This code was/is based on [sentences-per-line](https://github.com/JoshuaKGoldberg/sentences-per-line) by @JoshuaKGoldberg.
+Instead of parsing per line, we are utilizing the tokenization of markdownlint.
+Without the groundwork of `sentences-per-line` this rule would be for certain not in the state it is currently.
