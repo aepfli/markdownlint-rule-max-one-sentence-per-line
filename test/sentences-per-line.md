@@ -25,7 +25,7 @@ already wrapped. and contains code.` It will not wrap.
     How does it behave with text with identation. How is the result.
 
 
-* this is a bullet list. It should be wrapped but not idented.{max-one-sentence-per-line}
+* this is a bullet list. It should be wrapped but not indented.{max-one-sentence-per-line}
 
 1. A ordered list
 
@@ -33,7 +33,7 @@ already wrapped. and contains code.` It will not wrap.
 
 2. another list item
 
-    How does it behave with text with identation. for lists?{max-one-sentence-per-line}
+    How does it behave with text with indentation. for lists?{max-one-sentence-per-line}
 
 3. an ordered list item. with a sentence, should also break properly.{max-one-sentence-per-line}
 
