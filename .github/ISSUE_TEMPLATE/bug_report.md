@@ -7,21 +7,22 @@ assignees: ''
 
 ---
 
-**Describe the bug**
+## Describe the bug
+
 A clear and concise description of what the bug is.
 
-**Markdownlint input**
+## Markdownlint input
 
 ```markdown
 A Snippet showing the input
 ```
 
-**Expected behavior**
+## Expected behavior
 
 ```markdown
 A Snippet showing the expected result
 ```
 
-**Additional context**
+## Additional context
 
 Add any other context about the problem here.
