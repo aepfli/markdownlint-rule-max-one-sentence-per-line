@@ -1,0 +1,14 @@
+{
+  "config": {
+      "line-length": {
+        "line_length": 200
+      }
+  },
+  "ignores": [
+    "test/",
+    "node_modules/"
+  ],
+  "customRules": [
+    "./rule.js"
+  ]
+}
