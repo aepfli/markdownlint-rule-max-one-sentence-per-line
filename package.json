@@ -39,7 +39,7 @@
     "eslint-plugin-jsdoc": "40.0.1",
     "eslint-plugin-n": "15.6.1",
     "eslint-plugin-regexp": "1.12.0",
-    "eslint-plugin-unicorn": "45.0.2",
+    "eslint-plugin-unicorn": "46.0.0",
     "markdownlint": "^0.27.0",
     "markdownlint-cli2": "^0.6.0"
   }
