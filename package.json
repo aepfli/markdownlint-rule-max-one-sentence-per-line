@@ -36,7 +36,7 @@
     "ava": "5.3.1",
     "eslint": "8.38.0",
     "eslint-plugin-es": "4.1.0",
-    "eslint-plugin-jsdoc": "41.1.2",
+    "eslint-plugin-jsdoc": "47.0.2",
     "eslint-plugin-n": "16.3.1",
     "eslint-plugin-regexp": "1.15.0",
     "eslint-plugin-unicorn": "46.0.1",
