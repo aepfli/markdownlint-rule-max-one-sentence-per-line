@@ -41,6 +41,6 @@
     "eslint-plugin-regexp": "1.15.0",
     "eslint-plugin-unicorn": "46.0.1",
     "markdownlint": "^0.34.0",
-    "markdownlint-cli2": "^0.6.0"
+    "markdownlint-cli2": "^0.17.0"
   }
 }
