@@ -1,5 +1,8 @@
 // @ts-check
-
+/*
+First version and parts of this code originate from https://github.com/JoshuaKGoldberg/sentences-per-line/blob/main/index.js
+eg. isAfterIgnoredWord 
+*/
 "use strict";
 
 const {
